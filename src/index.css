@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+:root {
+  --font-ui: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-title: "Cinzel", serif;
+
+  --color-bg: #0b1020;
+  --color-text: #ffffff;
+  --color-muted: #9ca3af;
+  --color-gold: #facc15;
+}
