@@ -1,7 +1,11 @@
 import React from "react";
 import Music from "./Music";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
+  const linkClass = ({ isActive }) =>
+    isActive ? "text-yellow-300 underline" : "hover:text-yellow-300";
+
   return (
     <header className="absolute top-0 w-full z-50 bg-linear-to-b from-black/20 to-transparent font-(--font-ui)">
       <nav className="w-full px-6 mx-auto h-16 flex items-center justify-between">
@@ -16,13 +20,13 @@ const Navbar = () => {
 
           {/* Links */}
           <div className="flex items-center gap-5 text-white font-semibold text-sm ml-10">
-            <a href="#" className="">HOME</a>
-            <a href="#">NEWS</a>
-            <a href="#">CHARACTERS</a>
-            <a href="#">EXPLORE</a>
-            <a href="#">HoYoLAB</a>
-            <a href="#">TOP-UP</a>
-            <a href="#">REDEEM CODE</a>
+            <NavLink to="/" className={linkClass}>HOME</NavLink>
+            <NavLink to="/news" className={linkClass}>NEWS</NavLink>
+            <NavLink to="/characters" className={linkClass}>CHARACTERS</NavLink>
+            <NavLink to="/explore" className={linkClass}>EXPLORE</NavLink>
+            <NavLink to="/hoyolab" className={linkClass}>HoYoLAB</NavLink>
+            <NavLink to="/topup" className={linkClass}>TOP-UP</NavLink>
+            <NavLink to="/redeem" className={linkClass}>REDEEM CODE</NavLink>
           </div>
         </div>
 
