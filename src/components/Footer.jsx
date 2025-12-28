@@ -15,7 +15,7 @@ import {
 const Footer = () => {
   return (
     <footer className="w-full h-full">
-      <div className="social-icons footer-top h-16 flex justify-center items-center gap-20 text-3xl bg-black text-gray-300 border-b border-gray-300">
+      <div className="social-icons footer-top h-16 flex justify-center items-center gap-20 text-3xl bg-black text-gray-300 border-b border-gray-700">
         <FaXTwitter className="hover:text-white" />
         <FaTiktok className="hover:text-white" />
         <FaYoutube className="hover:text-white" />
@@ -28,10 +28,10 @@ const Footer = () => {
         <FaWhatsapp className="hover:text-white" />
       </div>
 
-      <section className="news-letter flex justify-between mx-auto items-center px-20 py-10">
+      <section className="news-letter flex justify-between mx-auto items-center px-20 pt-10 pb-15 bg-[#111] text-white">
         <div className="w-full">
-          <h4 className="mb-3">Subscribe for the Latest News</h4>
-          <p>
+          <h4 className="mb-3 tracking-tight text-2xl font-bold">Subscribe for the Latest News</h4>
+          <p className="tracking-tight w-130">
             Subscribe to Paimon's official Genshin Impact news to stay up to
             date with the latest information, character intel, and limited-time
             event rewards.
@@ -43,15 +43,15 @@ const Footer = () => {
             <input
               type="text"
               placeholder="Email"
-              className="border px-3 py-3 rounded rounded-3 w-100"
+              className="border-[#323339] bg-[#212226] px-3 py-3 rounded rounded-3 w-100"
             />
-            <button className="border px-5 py-3 rounded-xl bg-[#cdbb98] tracking-tight">
+            <button className="border-[#cdbb98] text-[#3B4354] px-5 py-3 rounded-xl bg-[#cdbb98] tracking-tight">
               Subscribe Now
             </button>
           </div>
-          <div className="">
-            <input type="radio" className="" />
-            <span>
+          <div className="w-80 flex gap-3 justify-center items-center">
+            <input type="radio" className="self-start mt-1" />
+            <span className="text-xs ">
               I agree for my personal data to be collected and used to receive
               event invitations and other game info.
             </span>
