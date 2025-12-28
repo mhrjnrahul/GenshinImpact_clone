@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import City from "../components/City";
+import Footer from "../components/Footer";
 
 export default function MainLayout() {
   return (
@@ -18,6 +19,8 @@ export default function MainLayout() {
         <City image="/cities/nodkrai.png" name="Nod-Krai" />
         <City image="/cities/coming.png" name="Coming Soon"/>
       </div>
+
+      <Footer />
     </div>
   );
 }
