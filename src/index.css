@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --font-ui: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-ui: Tahoma, Helvetica, Arial, system-ui, sans-serif;
   --font-title: "Cinzel", serif;
 
   --color-bg: #0b1020;
