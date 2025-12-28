@@ -3,7 +3,7 @@ import Music from "./Music";
 
 const Navbar = () => {
   return (
-    <header className="absolute top-0 w-full z-50 backdrop-blur-md bg-black/20 border-b border-white/10">
+    <header className="absolute top-0 w-full z-50 bg-linear-to-b from-black/20 to-transparent">
       <nav className="w-full px-6 mx-auto h-16 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
@@ -15,7 +15,7 @@ const Navbar = () => {
           />
 
           {/* Links */}
-          <div className="flex items-center gap-4 font-(--font-ui) text-gray-300 text-sm ml-10">
+          <div className="flex items-center gap-4 font-(--font-ui) text-sm ml-10">
             <a href="#">HOME</a>
             <a href="#">NEWS</a>
             <a href="#">CHARACTERS</a>
