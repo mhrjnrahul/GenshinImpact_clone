@@ -28,10 +28,10 @@ const Footer = () => {
         <FaWhatsapp className="hover:text-white" />
       </div>
 
-      <section className="news-letter flex justify-between mx-auto items-center px-20 pt-10 pb-15 bg-[#111] text-white">
+      <section className="news-letter flex justify-between gap-35 mx-auto items-center px-20 pt-10 pb-15 bg-[#111] text-white">
         <div className="w-full">
           <h4 className="mb-3 tracking-tight text-2xl font-bold">Subscribe for the Latest News</h4>
-          <p className="tracking-tight w-130">
+          <p className="tracking-tight w-110 text-sm">
             Subscribe to Paimon's official Genshin Impact news to stay up to
             date with the latest information, character intel, and limited-time
             event rewards.
