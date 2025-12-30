@@ -1,6 +1,7 @@
 import React from "react";
 import NewsCard from "../components/NewsCard";
 import Button from "../components/Button";
+import Footer from "../components/Footer";
 
 const News = () => {
   const news = [
@@ -27,21 +28,21 @@ const News = () => {
 
   const buttons = [
     {
-      buttonName: "Latest"
+      buttonName: "Latest",
     },
     {
-      buttonName: "Info"
+      buttonName: "Info",
     },
     {
-      buttonName: "Updates"
+      buttonName: "Updates",
     },
     {
-      buttonName: "Events"
-    }
+      buttonName: "Events",
+    },
   ];
 
   return (
-    <div className="w-full h-screen">
+    <div className="w-full h-full">
       <div
         className="w-full h-screen"
         style={{
@@ -50,8 +51,8 @@ const News = () => {
           backgroundPosition: "center",
         }}
       >
-        <div className="news-grid w-full h-full flex items-center justify-center">
-          <div className="news-items grid grid-cols-3 gap-6 items-stretch mx-30">
+        <div className="news-grid max-w-7xl w-full mx-auto  h-full flex items-center justify-center">
+          <div className="news-items grid grid-cols-3 gap-6 items-stretch">
             {news.map((item, index) => (
               <NewsCard
                 key={index}
@@ -59,24 +60,41 @@ const News = () => {
                 description={item.description}
                 date={item.date}
                 extra={item.extra}
+                variant="default"
               />
             ))}
           </div>
         </div>
       </div>
 
-      <div className="w-full h-screen mx-30 my-8">
-        <div className="flex gap-4">
-          {buttons.map((btn, index) => (
-            <Button key={index} buttonName={btn.buttonName} />
-          ))}
-        </div>
+      <section className="bg-[#f0f0f0]">
+        <div className="w-full max-w-7xl h-screen mx-auto px-4 mb-5 py-5">
+          <div className="flex gap-4 mb-6">
+            {buttons.map((btn, index) => (
+              <Button key={index} buttonName={btn.buttonName} />
+            ))}
+          </div>
 
-        <div className="news-container">
-          
+          <div className="news-container mt-2 w-full">
+            <div className="flex flex-col gap-2">
+              {news.map((item, index) => (
+                <NewsCard
+                  key={index}
+                  image={item.image}
+                  description={item.description}
+                  date={item.date}
+                  extra={item.extra}
+                  variant="compact"
+                />
+              ))}
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
+      <Footer />
     </div>
+
+    
   );
 };
 
