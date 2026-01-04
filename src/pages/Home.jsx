@@ -16,7 +16,7 @@ const Home = () => {
 
 
   return (
-    <div className="relative w-full h-screen">
+    <div className="relative w-full h-full">
       <video
         src="/video/genshin_hero.mp4"
         autoPlay
